@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="app.umichan.likeslackrenewal.ui.fragment.ChannelFragment"
+        android:label="Team"
+        tools:layout="@layout/fragment_channel" />
+    <fragment
+        android:id="@+id/nav_dm"
+        android:name="app.umichan.likeslackrenewal.ui.fragment.DirectMessageFragment"
+        android:label="Direct messages"
+        tools:layout="@layout/fragment_direct_message" />
+    <fragment
+        android:id="@+id/nav_mention"
+        android:name="app.umichan.likeslackrenewal.ui.fragment.MentionFragment"
+        android:label="Mentions &amp; reactions"
+        tools:layout="@layout/fragment_mention" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="app.umichan.likeslackrenewal.ui.fragment.ProfileFragment"
+        android:label="You"
+        tools:layout="@layout/fragment_mention" />
+</navigation>
